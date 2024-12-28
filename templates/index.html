@@ -135,9 +135,10 @@
         {% endif %}
       </section>
       <!-- Секция с формой обратной связи -->
-      <section class="main__feedback feedback" id="feedback">
+      <section class="main__feedback feedback" id="feedback"></form>
         <h2 class="feedback__title">FEEDBACK</h2>
         <form action="" method="POST" class="feedback__form form">
+        <form action="/submit" method="POST" class="feedback_form form">
           <label for="email">
             <input type="email" class="form__input" name="email" id="email" placeholder="Enter your email" required>
           </label>
@@ -145,6 +146,7 @@
             <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Any comments?"></textarea>
           </label>
           <button class="button" style="vertical-align:middle"><span>send</span></button>
+        </form>
         </form>
       </section>
     </main>
