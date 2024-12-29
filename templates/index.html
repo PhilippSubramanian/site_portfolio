@@ -29,7 +29,7 @@
     <main class="main">
       <!-- Секция превью -->
       <section class="main__home home" id="home">
-        <h1 class="home__title">NAME SURNAME</h1>
+        <h1 class="home__title">Philipp Subramanian</h1>
         <p class="home__subtitle">WEB-DEVELOPER, PYTHON PROGRAMMER</p>
       </section>
       <!-- Секция с рассказом о себе -->
@@ -135,18 +135,17 @@
         {% endif %}
       </section>
       <!-- Секция с формой обратной связи -->
-      <section class="main__feedback feedback" id="feedback"></form>
+      <!-- Секция с формой обратной связи -->
+      <section class="main__feedback feedback" id="feedback">
         <h2 class="feedback__title">FEEDBACK</h2>
-        <form action="" method="POST" class="feedback__form form">
-        <form action="/submit" method="POST" class="feedback_form form">
+        <form action="/feedback" method="POST" class="feedback__form form">
           <label for="email">
-            <input type="email" class="form__input" name="email" id="email" placeholder="Enter your email" required>
+            <input type="email" class="form__input" name="email" id="email" placeholder="E-mail" required>
           </label>
           <label for="text">
             <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Any comments?"></textarea>
           </label>
           <button class="button" style="vertical-align:middle"><span>send</span></button>
-        </form>
         </form>
       </section>
     </main>
